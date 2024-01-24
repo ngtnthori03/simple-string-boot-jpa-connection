@@ -5,7 +5,7 @@
 
 - [[https://hub.docker.com/_/microsoft-mssql-server/][docker image]]
 
-** .env file for docker compose file
+** .env for docker compose file
 
 #+begin_src env
 ACCEPT_EULA=Y
