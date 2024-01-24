@@ -18,6 +18,7 @@ public class HomeController {
     public String home(Model model) {
 
         if (userRepository.findAll().isEmpty()) {
+
             userRepository.save(
                     User.builder()
                             .name("thinhxorigami")
