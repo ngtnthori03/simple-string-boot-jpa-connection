@@ -18,16 +18,6 @@ public class HomeController {
     @GetMapping("/home")
     public String home(Model model) {
 
-        if (userRepository.findAll().isEmpty()) {
-
-            userRepository.save(
-                    User.builder()
-                            .name("thinhxorigami")
-                            .passwd("1234")
-                            .build()
-            );
-        }
-
         model.addAttribute("user", userRepository.findAll());
 
         return "home";
