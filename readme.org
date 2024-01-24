@@ -1,0 +1,14 @@
+
+* getting started
+
+** prep container (i sue [[https://podman.io/][podman]]) instead of [[https://www.docker.com/][docker]])
+
+- [[https://hub.docker.com/_/microsoft-mssql-server/][docker image]]
+
+** .env file for docker compose file
+
+#+begin_src env
+ACCEPT_EULA=Y
+MSSQL_SA_PASSWORD=r00t:R00T
+
+#+end_src
