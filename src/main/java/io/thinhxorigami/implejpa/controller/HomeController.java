@@ -3,7 +3,6 @@ package io.thinhxorigami.implejpa.controller;
 import io.thinhxorigami.implejpa.model.User;
 import io.thinhxorigami.implejpa.repository.UserRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +27,6 @@ public class HomeController {
                             .build()
             );
         }
-
 
         model.addAttribute("user", userRepository.findAll());
 
